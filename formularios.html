@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Formularios
+    -->
+    <form>
+        <!--etiqueta donde se define un texto a mostrar, for es para ligar el label a un input-->
+        <label for="username">Nombre de usuario</label>
+        <!--nombre de usuario, name para identificar de que trata el input, "unico"autocompletar segun las cookies, required- valores requeridos-->
+        <input type="text" value="", name="username", autocomplete="off" required> 
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" required> <!--recuadro para la contraseña-->
+        <br>
+        <label for="country">País</label>
+        <select name="" id="" name="country"> <!--varios controles-->
+            <!--se despliega un menu con las siguientes opciones-->
+            <option value="EU">Estados Unidos</option> 
+            <option value="CA">Canada</option>
+            <option value="MX">México</option>
+        </select>
+        <br>
+        <label for="description">Descripción</label>
+        <!--Un area de texto grande, cols- columnas, rows-renglones, readonly-bandera que solo se lee -->
+        <textarea name="description" id="" cols="" rows="" readonly>
+        </textarea>
+        <br>
+        <label for="age">Edad</label>
+        <!--control de tipo numerico, con minimo y maximo, step- para aumentar en 0.5, disable- deshabilita el control-->
+        <input type="number" name="age" min="13" max="100" step="0.5" disabled>
+        <br>
+        <label for="email">Correo</label>
+        <!--control de tipo correo, placeholder- indicador o ayuda-->
+        <input type="mail" name="email" autocomplete="off" placeholder="ejemplo@algo.com">
+        <br>
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone" autocomplete="off" placeholder="444-444-4444">
+        <br>
+        <!--boton para enviar el formulario, type- que envie información-->
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
