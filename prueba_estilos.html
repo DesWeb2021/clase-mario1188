@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--forma 2 de aplicar estilos-->
+    <!--p, a todos los elemtos toman el estilo seleccionado-->
+    <!--#grande, a todos los elementos con id igual toman el estilo-->
+    <!--.arial .blue, es una clase y a todos los elementos con la clase toman el estilo, cada elemento puede tener varias clases-->
+    <!--button.arial, solo afecta al boton con la clase arial y no a los demas botones-->
+    <!--h1::first-letter, p::first-letter , afecta el estilo a todos los h1 y parrafos (solo la primera linea)-->
+    <!-- !important , forza el estilo-->
+    <style>
+        #grande{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px; 
+        }
+        .arial{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .blue{
+            color: blue;
+        }
+        button.arial{
+            background-color: seagreen;
+        }
+        h1::first-letter, p{
+            font-weight: bold;
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: cornflowerblue;">Ejemplos CSS</h1> <!--forma 1 de aplicar estilos, dentro del elemento-->
+
+    <p id="grande">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi omnis ad minus 
+        temporibus ullam natus unde corporis facilis aliquam culpa quasi iste aut dolor 
+        in repellendus, pariatur corrupti fugiat quibusdam.</p>
+
+    <p class="arial blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet maiores maxime, 
+        laudantium ipsam qui iure. Esse distinctio molestiae quos hic possimus, modi itaque? 
+        Sit voluptas voluptatibus nisi, omnis delectus ipsa.</p>
+
+    <p class="arial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit accusantium at 
+        ad soluta minima inventore ab itaque maiores? Excepturi laborum, debitis temporibus 
+        dolorem in beatae vero officia placeat asperiores explicabo.</p>
+    
+    <button class="arial">Presióname</button>
+
+    <button>Otro botón</button>
+</body>
+</html>
