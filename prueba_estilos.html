@@ -8,10 +8,16 @@
     <!--forma 2 de aplicar estilos-->
     <!--p, a todos los elemtos toman el estilo seleccionado-->
     <!--#grande, a todos los elementos con id igual toman el estilo-->
-    <!--.arial .blue, es una clase y a todos los elementos con la clase toman el estilo, cada elemento puede tener varias clases-->
+    <!--.arial .blue,(pseudo clases) es una clase y a todos los elementos con la clase toman el estilo, cada elemento puede tener varias clases-->
     <!--button.arial, solo afecta al boton con la clase arial y no a los demas botones-->
-    <!--h1::first-letter, p::first-letter , afecta el estilo a todos los h1 y parrafos (solo la primera linea)-->
+    <!--h1::first-letter (pseudo-elemento), p::first-letter , afecta el estilo a todos los h1 y parrafos (solo la primera linea)-->
     <!-- !important , forza el estilo-->
+    <!--button:hover, accion de pasar el cursor sobre el boton (selector:pseudo clase - dependen de como interactua el usuario)-->
+    <!-- input:focus , al momento de hacer click en el elemento aplica el estilo-->
+    <!--(0, 1, 0) , especificidad (jerarquia del estilo), 
+        (id, clases-pseudo clases y atributos, elementos y pesudo elementos), en cuanto mas especificidad 
+        tenga el selector, el estilo sera predominante, * al tener dos elementos con la misma especificidad,
+        se toma el ultimo elemento-->
     <style>
         #grande{
             font-size: 50px;
@@ -28,9 +34,16 @@
         button.arial{
             background-color: seagreen;
         }
-        h1::first-letter, p{
+        h1::first-letter, p.arial{
             font-weight: bold;
             color: red !important;
+        }
+        button:hover, p:hover{
+            background-color: black;
+            color: white;
+        }
+        input:focus{
+            box-shadow: blue 5px 5px;
         }
     </style>
 </head>
@@ -52,5 +65,9 @@
     <button class="arial">Presióname</button>
 
     <button>Otro botón</button>
+
+    <br>
+    <br>
+    <input type="text">
 </body>
 </html>
