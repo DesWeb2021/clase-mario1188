@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        1. [name] - todos los atributos que tengan name
+        2. [for="name"] - elemento donde el atributo sea igual a ..
+        3. [alt~="uaslp"] - donde el elemento tenga un atributo alt con nombre igual (palabra separada)
+        4. [id|="parrafo"] - donde el elemento tenga de atributo id y empiece con la palabra o letra
+        5. [name^="last"] -  donde el elemento tenga de atributo name y empiece con la palabra
+        6. [name$="e"] - elementos con atributo name que terminen con la letra
+        7. [for*="name"] - elementos con atributo for y contengan en la cada la palabra name
+    -->
+    <style>
+        /*
+        comentarios dentro de estilos
+        */
+        [name]{
+            background-color: dodgerblue;
+        }
+        [for="name"]{
+            text-transform: uppercase;
+        }
+        [alt~="uaslp"]{
+            height: 50px;
+        }
+        [id|="parrafo"]{
+            border: solid 2px red;
+        }
+        [name^="last"]{
+            font-size: 20px;
+        }
+        [name$="e"]{
+            margin-left: 50px;
+        }
+        [for*="name"]{
+            color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <p id="parrafo-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque laborum eum vero dicta. 
+        Aliquam perspiciatis, enim quos nisi porro laborum necessitatibus, itaque dolorem tenetur 
+        mollitia est et modi deleniti dolores!
+    </p>
+
+    <p id="parrafo-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio debitis labore 
+        asperiores nihil libero. Ratione necessitatibus quisquam eaque dolorem facere tempora velit 
+        dolores tenetur esse! Rem, tempora temporibus. Explicabo?
+    </p>
+
+    <p id="parrafo-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fuga cum commodi harum, magnam 
+        accusamus magni impedit in suscipit et modi exercitationem temporibus sed sint ratione, quidem, 
+        dolorum possimus at.
+    </p>
+
+    <img src="uaslp_img.png" alt="uaslp imagen">
+
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" name="name">
+        <br>
+        <label for="lastname1">Apellido Paterno</label>
+        <input type="text" name="lastname1">
+        <br>
+        <label for="lastname2">Apellido Materno</label>
+        <input type="text" name="lastname2">
+        <br>
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone">
+    </form>
+</body>
+</html>
