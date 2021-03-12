@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*
+         text-align: left, rigth, center, justify - alinea los textos
+         text-decoration: line-through, overline, underline - pone una linea sobre, encima o debajo del texto
+         text-transform: uppercase, lowercase, capitalize - covierte el texto en mayuscula, minuscula o mayuscula la primer letra de cada palabra
+         text-indent: 50px - aplica sangria al parrafo
+         letter-spacing: 2px - espaciado entre letras
+         line-height: 1.5 - espaciado entre lineas
+         text-shadow: 2px 4px black; - aplicar sombras (horizontal vertical color)
+         font-family: 'Times New Roman', Times, serif; - tipo de letra
+         */
+        #p1{ /*id*/ 
+            color: brown;
+            text-align: left;
+            text-decoration: line-through;
+            text-transform: uppercase;
+        }
+        #p2{
+            text-align: right;
+            text-decoration: overline;
+            text-transform: lowercase;
+        }
+        #p3{
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+        #p4{
+            text-align: justify;
+            text-indent: 50px;
+            letter-spacing: 2px;
+            line-height: 1.5;
+        }
+        a{ /*aplicar estilo a los elementos a directamente*/
+            text-decoration: none;
+            text-shadow: 2px 4px rgba(0, 0, 0, 0.25);
+        }
+        /*clases*/
+        .serif{
+            font-family: 'Times New Roman', Times, serif; /*fuente default*/
+        }
+        .sans{
+            font-family: Arial, Helvetica, sans-serif; /*para textos medianos*/
+        }
+        .mono{
+            font-family: 'Courier New', Courier, monospace; /*cada letra ocupa el mismo espacio, textos grandes*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sefir">Serif</h1> <!--la familia de serif tienen arreglos en las terminaciones de la palabra -->
+
+    <h1 class="sans">Sans-serif</h1>
+
+    <h1 class="mono">Monospace</h1>
+
+
+    <a href="https:\\www.google.com">google</a>
+
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis numquam 
+        sapiente earum commodi libero natus accusantium inventore a dolore ipsum est 
+        voluptates quam, nisi voluptatibus non iusto ad? Fugit, nam!
+    </p>
+
+    <p id="p2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores rem eius alias 
+        modi vero nihil quos, assumenda autem aperiam eum natus quas laudantium debitis nulla 
+        illum iusto, optio reiciendis voluptatibus.
+    </p>
+
+    <p id="p3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quia consectetur 
+        doloribus harum, suscipit nulla minima libero. Neque quisquam sed saepe. Reiciendis 
+        autem ipsa, quis quae quia voluptates repellat enim?
+    </p>
+
+    <p id="p4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus modi aliquam 
+        incidunt ut, quae eveniet voluptas quod dolor, error eius soluta officia debitis odit 
+        veritatis labore ipsam vel, unde in!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, rem officiis. Nam est 
+        nostrum assumenda laborum maxime similique dolore vel eum omnis cum exercitationem, impedit 
+        laboriosam nemo deserunt dolores asperiores.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius soluta eum ratione optio 
+        saepe similique aspernatur, ut debitis cumque repellendus, quo harum corporis libero reiciendis 
+        nostrum totam quod porro. Sunt.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas sit tempora fuga 
+        incidunt magni animi doloremque impedit ea enim, optio iste, temporibus necessitatibus 
+        nesciunt tenetur soluta possimus facere beatae.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, fuga praesentium incidunt 
+        porro laboriosam nesciunt ab obcaecati assumenda facere earum ullam, dicta, magnam perspiciatis 
+        architecto dolores. Odio aliquid blanditiis itaque!
+    </p>
+
+</body>
+</html>
