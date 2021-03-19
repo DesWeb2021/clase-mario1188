@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Media querys-->
+    <style>
+        /*relativo a todo el documento*/
+        html{
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+        }
+        /*cuando el ancho minimo sea de 0px*/
+        @media(min-width: 0px){
+            p{
+                color: red;
+            }
+            li{
+                display: inline-block;
+            }
+        }
+        /*cuando el ancho minimo sea de 768px*/
+        @media(min-width: 768px){
+            p{
+                color: blue;
+            }
+            li{
+                display: list-item;
+            }
+        }
+        /*configuracion por default*/
+        div{
+            font-size: 20px;
+            width: 75%;
+            border: solid 1px black;
+            margin: 0px auto; /*centrar el div, arriba-abajo costados*/
+            margin-left: 5vw; /*se modifica conforme la anchura de la pantalla*/
+        }
+        p{
+            /*font-size: 2em;*/
+            font-size: 2rem; /*rlativo al documento*/
+        }
+        h1{
+            /*font-size: 10vw;*/ /*deacuerdo al largo de la pantalla*/
+            font-size: 20vh; /*deacuerdo al alto de la pantalla*/
+        }       
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium aliquid, 
+        eius eos, saepe similique quos quas quo fugit ea dolorum ipsam quae corrupti doloremque 
+        sit magnam! Eligendi, nisi cumque.
+    </p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quod inventore. 
+        Impedit exercitationem eaque eum nisi esse quidem nihil nemo illum fugit, asperiores 
+        voluptatum quam aliquid aperiam! Fuga, quo dolor!
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga aspernatur molestiae 
+            nobis tempora ad vel nam dolorem recusandae reprehenderit odit culpa impedit facilis fugit, 
+            eum sequi laboriosam doloribus exercitationem?
+        </p>
+    </div>
+
+    <h1>Hola Mundo</h1>
+</body>
+</html>
